@@ -12,61 +12,132 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    background-color: #e2e1e1;
+    background-color: #e8eae7;
     position: relative;
 }
 
-h1 {
-    margin: 2rem;
-    font-size: 3rem;
-}
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: #3c3c3c;
+}
+
+span {
+    color: #000;
+    font-weight: 600;
 }
 
 input, label, legend {
     font-family: inherit;
 }
 
+
+.header {
+    width: 100%;
+    box-shadow: 0px 1px 4px rgb(182, 181, 181);
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+
+h1 {
+    font-family: "Bungee", sans-serif;
+    margin: 1rem 3.5rem; 
+    font-size: 2.5rem;
+    text-transform: lowercase;
+}
+
+
 .library__container {
     width: 90vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
 .book {
     background-color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+    gap: 1.5rem;
+    align-items: start;
     border-radius: 10px;
-    box-shadow: 5px 5px 2px #8f38c9;
+    box-shadow: 1px 2px 4px rgb(159, 157, 157);
+    cursor: pointer;
+    transition: transform ease-in .3s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.remove-book-btn {
+    text-transform: uppercase;
+    align-self: end;
+    background-color: inherit;
+    border: none;
+}
+
+ion-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(57, 57, 57);
+}
+
+ion-icon:hover {
+    color: #d71717;
+}
+
+.toggle-read-btn {
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.read__text--green {
+    background-color: #0c8143;
+    font-weight: 600;
+}
+.read__text--green:hover {
+    background-color: transparent;
+    outline: 2px solid #0c8143;
+    color: #0c8143;
+}
+
+.read__text--red {
+    background-color: #c3250c;
+    font-weight: 600;
+}
+.read__text--red:hover {
+    background-color: transparent;
+    outline: 2px solid #c3250c;
+    color: #c3250c;
 }
 
 .btn{
     margin: 1rem 0 2rem 0 ;
-    padding: 1.2rem 4rem;
+    padding: 1.1rem 3.5rem;
     font-size: 1.5rem;
     font-weight: 600;
-    background-color: #8f38c9;
+    background-color: #121212;
     color: #fff;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 1px 2px 4px rgb(159, 157, 157);
+    transition: transform ease-in-out .2s;
 }
 
 .btn:hover {
-    background-color: #5d188b;
+    background-color: #116c48;
+    transform:translateY(-5px);
 }
 
 
@@ -91,13 +162,14 @@ input, label, legend {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #8f38c9;
+    background-color: #e8eae7;
     border-radius: 10px;
-    color: #fff;
+    color: #000;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.389);
 }
 
 .closed-btn {
+    color: #000;
     margin: 1rem;
     align-self: end;
     cursor: pointer;
@@ -108,7 +180,7 @@ input, label, legend {
 }
 
 .closed-btn:hover {
-    color:#a11212;
+    color:#d71717;
 }
 
 .form__container {
@@ -176,10 +248,11 @@ input[type='radio'] {
 
 
 .submit-btn {
-    background-color: #000000;
+    background-color: #116c48;
+    box-shadow: none;
     padding: .8rem 5rem;
 }
 
 .submit-btn:hover {
-    background-color: #a11212;
+    background-color: #0e5a3c;
 }

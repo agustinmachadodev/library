@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Library</h1>
+    <header class="header">
+        <h1>Library</h1>
+    </header>
 
     <div class="library__container"></div>
 
     <form action="#" class="form">
-        <button class="closed-btn">X</button>
+        <button class="closed-btn">✕</button>
         <fieldset class="form__container">
             <legend>New Book</legend>
 
@@ -52,9 +53,12 @@
         <button type="submit" class="submit-btn btn">Add</button>
     </form>
 
-    <button class="add-book-btn btn">Add Book</button> 
+    <button class="add-book-btn btn">Add Book</button>
 
-     <script src="script.js"></script> 
+    <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
